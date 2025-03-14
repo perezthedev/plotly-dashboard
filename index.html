@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plotly Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 90%;
+            height: 600px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Plotly Dashboard</h1>
+
+    <h2>Main Comparison of High vs Low DEGenes</h2>
+    <iframe src="plots/main_comparison_violin.html"></iframe>
+
+    <h2>High DEGenes - M vs Y Samples</h2>
+    <iframe src="plots/high_degenes_violin.html"></iframe>
+
+    <h2>Low DEGenes - M vs Y Samples</h2>
+    <iframe src="plots/low_degenes_violin.html"></iframe>
+
+    <h2>Highest 100 Genes Scatter Plot</h2>
+    <iframe src="plots/highest_100_genes_scatter_plot.html"></iframe>
+
+    <h2>Lowest 100 Genes Scatter Plot</h2>
+    <iframe src="plots/lowest_100_genes_scatter_plot.html"></iframe>
+
+</body>
+</html>
