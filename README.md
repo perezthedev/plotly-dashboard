@@ -36,3 +36,17 @@ BibTeX format:
   doi       = {10.XXXX/your-doi}
 }
 ```
+
+TODO:
+## **(Optional) Add a `LICENSE` Notice in Code Files**
+If you want to **remind users to cite your paper** when they look at the code, add a comment at the top of your main Python files:
+
+```python
+"""
+Interactive Plotly Dashboard for Gene Expression Analysis
+
+Author: Your Name
+License: MIT License
+Paper: "Title of the Paper" - DOI: 10.XXXX/your-doi
+If you use this code, please cite the above paper.
+"""
