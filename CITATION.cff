@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the following paper:"
+authors:
+  - family-names: "A. Robleto"
+    given-names: "Eduardo"
+    orcid: "https://orcid.org/0000-0002-3957-7101"  # Optional
+title: "Draft genome of Bacillus subtilis strain YB955, prophage-cured derivative of strain 168"
+DOI: "https://doi.org/10.1128/mra.00263-24"  # Add DOI here
+date-released: "2024-07-22"
+version: "1.0.0"
+license: "MIT"
