@@ -37,8 +37,8 @@ BibTeX format:
 }
 ```
 
-TODO:
-## **(Optional) Add a `LICENSE` Notice in Code Files**
+## **TO-DO:**
+(Optional) Add a `LICENSE` Notice in Code Files
 If you want to **remind users to cite your paper** when they look at the code, add a comment at the top of your main Python files:
 
 ```python
