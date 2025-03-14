@@ -25,6 +25,19 @@
             margin-bottom: 20px;
             background: white;
         }
+        button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +57,37 @@
 
     <h2>Lowest 100 Genes Scatter Plot</h2>
     <iframe src="plots/lowest_100_genes_scatter_plot.html"></iframe>
+
+    <!-- Citation Section -->
+    <h2>Citation</h2>
+    <p>If you use this dashboard, please cite the following paper:</p>
+
+    <p><strong>[Your Name], et al. (Year). "Title of the Paper". Journal Name. DOI: 
+        <a href="https://doi.org/10.XXXX/your-doi" target="_blank">10.XXXX/your-doi</a></strong></p>
+
+    <pre id="bibtex">
+@article{YourName2025,
+  author    = {Your Name and Others},
+  title     = {Title of Your Paper},
+  journal   = {Journal Name},
+  year      = {2025},
+  volume    = {XX},
+  number    = {X},
+  pages     = {XX-XX},
+  doi       = {10.XXXX/your-doi}
+}
+    </pre>
+
+    <button onclick="copyBibTeX()">Copy BibTeX</button>
+
+    <script>
+        function copyBibTeX() {
+            const bibtexText = document.getElementById("bibtex").innerText;
+            navigator.clipboard.writeText(bibtexText).then(() => {
+                alert("BibTeX copied to clipboard!");
+            });
+        }
+    </script>
 
 </body>
 </html>
