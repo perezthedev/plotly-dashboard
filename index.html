@@ -57,15 +57,7 @@
 
     <h2>Lowest 100 Genes Scatter Plot</h2>
     <iframe src="plots/lowest_100_genes_scatter_plot.html"></iframe>
-
-    <!-- Page Visits Counter -->
-    <script>
-    function cb(response) {
-        document.getElementById('visits').innerText = response.value;
-    }
-    </script>
-    <script async src="https://api.countapi.xyz/hit/perezthedev.github.ioplotly-dashboard/visits?callback=cb"></script>
-
+    
     <!-- Citation Section -->
     <h2>Citation</h2>
     <p>If you use this dashboard, please cite the following paper:</p>
@@ -96,6 +88,20 @@
                 alert("BibTeX copied to clipboard!");
             });
         }
+
+    // page visits counter
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('https://api.countapi.xyz/hit/perezthedev-plotly-dashboard/visits')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('visit-count').textContent = data.value.toLocaleString();
+                })
+                .catch(error => {
+                    console.error('Error updating visit counter:', error);
+                    document.getElementById('visit-count').textContent = 'unable to load';
+                });
+        });
+        
     </script>
 
 </body>
