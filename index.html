@@ -59,6 +59,12 @@
     <iframe src="plots/lowest_100_genes_scatter_plot.html"></iframe>
 
     <!-- Page Visits Counter -->
+    <script>
+    function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+    }
+    </script>
+    <script async src="https://api.countapi.xyz/hit/perezthedev.github.ioplotly-dashboard/visits?callback=cb"></script>
 
     <!-- Citation Section -->
     <h2>Citation</h2>
