@@ -69,7 +69,11 @@
     <iframe src="plots/lowest_100_genes_scatter_plot.html"></iframe>
 
     <!-- Page Visits Counter -->
-    <div id="visit-counter">Visits: <span id="visit-count">...</span></div>
+    <div id="visit-counter">
+        <a href="https://hits.seeyoufarm.com" style="text-decoration: none; color: inherit;">
+            <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fperezthedev.github.io%2Fplotly-dashboard%2F&count_bg=%23777777&title_bg=%23FFFFFF&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=false" alt="Visitor Count" style="vertical-align: middle;">
+        </a>
+    </div>
 
     <!-- Citation Section -->
     <h2>Citation</h2>
@@ -101,19 +105,6 @@
                 alert("BibTeX copied to clipboard!");
             });
         }
-
-        // Page visit counter
-        document.addEventListener('DOMContentLoaded', () => {
-            fetch('https://api.countapi.xyz/hit/perezthedev-plotly-dashboard/visits')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('visit-count').textContent = data.value.toLocaleString();
-                })
-                .catch(error => {
-                    console.error('Error updating visit counter:', error);
-                    document.getElementById('visit-count').textContent = 'unable to load';
-                });
-        });
     </script>
 
 </body>
