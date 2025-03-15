@@ -58,12 +58,17 @@
     <h2>Lowest 100 Genes Scatter Plot</h2>
     <iframe src="plots/lowest_100_genes_scatter_plot.html"></iframe>
 
-    <!-- Page Visits Counter -->
+    <!-- Page Visits Counter (CountAPI) -->
     <h2>Page Visits</h2>
-    <a href="https://www.freecounterstat.com" title="hit counter">
-        <img src="https://www.freecounterstat.com/counter.php?counter=7863&digit=5&style=0006" 
-             border="0" alt="hit counter">
-    </a>
+    <p>Total Visitors: <span id="count">Loading...</span></p>
+
+    <script>
+        fetch('https://api.countapi.xyz/hit/yb955-dashboard/visits')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('count').innerText = data.value;
+            });
+    </script>
 
     <!-- Citation Section -->
     <h2>Citation</h2>
