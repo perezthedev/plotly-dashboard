@@ -1,6 +1,8 @@
 # plotly-dashboard
 A test dashboard containing genomic interactive graphs for Bacillus subtilis.
 
+[title](https://perezthedev.github.io/plotly-dashboard/)
+
 ## Citation
 
 If you use this code, please cite:
